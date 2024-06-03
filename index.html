@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h4 id="one">AWARD WINNING</h4>
+            <h1 id="two">DIGITAL MARKETING</h1>
+            <h1 id="two">AGENCY</h1>
+            <p id="two">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+            <p id="two">vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus</p>
+            <p id="two">feugiat et fermentum</p>
+            <button id="two" class="contact-btn" onclick="togglePopup()">Contact Us</button>
+        </div>
+        <div class="image" id="three">
+            <img src="portrait-gorgeous-smiling-woman-pink.jpg" alt="Woman Smiling">
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="togglePopup()"></div>
+    <div id="contactPopup" class="contact-popup">
+        <button class="close-button" onclick="togglePopup()">Close</button>
+        <h3>Talk to us</h3>
+        <form action="https://getform.io/f/your-getform-endpoint" method="POST">
+            <label for="email">Work email*</label>
+            <input type="email" id="email" name="email" required>
+            <label for="firstname">First name*</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname">Last name*</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to Fyle's terms and conditions, and provide consent to send me communication.
+            </label>
+            <input type="submit" value="Contact Us">
+        </form>
+    </div>
+    <div class="submain">
+        <div class="mid">
+            <div class="left">
+                <h2>WHAT WE DO</h2>
+                <h1>SERVICES PROVIDE</h1>
+                <h1>FOR YOU</h1>
+                </div>
+                <div class="right">
+                    <p >Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <p >vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus</p>
+                    <p >feugiat et fermentum</p>
+                </div>
+        </div>
+            <section id="what-we-do">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img id="img1" src="young-woman-wearing-trendy-hairstyle.jpg"></div>
+                        <div class="slide"><img id="img1" src="young-womwn-wearing-trendy-hairstyle (1).jpg"></div>
+                        <div class="slide"><img id="img1" src="young-womwn-wearing-trendy-hairstyle.jpg"></div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <a href="" target="_blank" class="read-more-button" id="read">Read More</a>
+            </section>
+        
+    </div>
+    <div class="lower">
+        <section id="our-project">
+            <h2>OUR PROJECT</h2>
+            <h3>WHY WE ARE BEST</h3>
+            <div class="project-container">
+                <div class="project-image">
+                    <img id="main-image" src="young-womwn-wearing-trendy-hairstyle.jpg" alt="Project Image">
+                </div>
+                <div class="project-content">
+                    <div class="content-item" onclick="changeImage('young-woman-wearing-trendy-hairstyle.jpg')">
+                        <h4>Genderless Kai - Japan's Hot</h4>
+                        <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+                    </div>
+                    <div class="content-item" onclick="changeImage('young-womwn-wearing-trendy-hairstyle (1).jpg')">
+                        <h4>Better Strategy & Quality</h4>
+                        <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+                    </div>
+                    <div class="content-item" onclick="changeImage('young-womwn-wearing-trendy-hairstyle.jpg')">
+                        <h4>Genderless Kai - Japan's Hot</h4>
+                        <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+                    </div>
+                    <!-- Add more content items as needed -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="bottom">
+        <section id="company-growth">
+            <h2>EXPERTS GROWTH</h2>
+            <h3>OUR COMPANY GROWTH</h3>
+            <div class="growth-cards">
+                <div class="growth-card">
+                    <span class="icon">❤️</span>
+                    <p class="number">199 +</p>
+                    <p class="description">Satisfied Customers</p>
+                </div>
+                <div class="growth-card">
+                    <span class="icon">⏱️</span>
+                    <p class="number">1591+</p>
+                    <p class="description">Days Of Operation</p>
+                </div>
+                <div class="growth-card">
+                    <span class="icon">✔️</span>
+                    <p class="number">283 +</p>
+                    <p class="description">Completed Projects</p>
+                </div>
+                <div class="growth-card">
+                    <span class="icon">🏆</span>
+                    <p class="number">75+</p>
+                    <p class="description">Win Awards</p>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
